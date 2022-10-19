@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,23 +13,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="farborakel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G5a-It-ZXh">
-                                <rect key="frame" x="49" y="119" width="290" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
-                                <color key="tintColor" systemColor="labelColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Ändere die Farbe des Hintergrunds"/>
-                                <connections>
-                                    <action selector="changebackground:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P9o-Ar-0nm"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QnL-WM-0xM">
-                                <rect key="frame" x="61" y="675" width="267" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QnL-WM-0xM">
+                                <rect key="frame" x="25" y="703.66666666666663" width="343" height="34.333333333333371"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
@@ -38,14 +26,35 @@
                                     <action selector="changecirclecolor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oAP-gI-uaO"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Q4-W8-sA6">
-                                <rect key="frame" x="103" y="309" width="200" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Q4-W8-sA6">
+                                <rect key="frame" x="100" y="304" width="193" height="219.66666666666663"/>
                                 <color key="backgroundColor" systemColor="systemBrownColor"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G5a-It-ZXh">
+                                <rect key="frame" x="25" y="76" width="340" height="35"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Ändere die Farbe des Hintergrunds"/>
+                                <connections>
+                                    <action selector="changebackground:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P9o-Ar-0nm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGrayColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="G5a-It-ZXh" secondAttribute="trailing" constant="20" id="0ri-LE-8Vo"/>
+                            <constraint firstItem="6Q4-W8-sA6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="NhS-ZO-CM1"/>
+                            <constraint firstItem="6Q4-W8-sA6" firstAttribute="top" secondItem="G5a-It-ZXh" secondAttribute="bottom" constant="180" id="Pje-en-77u"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QnL-WM-0xM" secondAttribute="trailing" constant="25" id="izb-Cu-Ouk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QnL-WM-0xM" secondAttribute="bottom" constant="80" id="lPo-ht-oqD"/>
+                            <constraint firstItem="QnL-WM-0xM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="nS9-OT-TAX"/>
+                            <constraint firstItem="QnL-WM-0xM" firstAttribute="top" secondItem="6Q4-W8-sA6" secondAttribute="bottom" constant="180" id="ne6-xQ-Zgx"/>
+                            <constraint firstItem="G5a-It-ZXh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="oDm-yb-aWa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Q4-W8-sA6" secondAttribute="trailing" constant="100" id="wcP-NG-lxy"/>
+                            <constraint firstItem="G5a-It-ZXh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="znz-nO-CXc"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="background_button" destination="QnL-WM-0xM" id="BUF-4Q-ipb"/>
